@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>portfolio</title>
+        <style>
+            .coll {
+                background-color: #161b22;
+            }
+            .tooltip {
+                position: relative;
+                display: inline-block;
+            }
+            .tooltip .tooltiptext {
+                visibility: hidden;
+                width: 140px;
+                background-color: #555;
+                color: #fff;
+                text-align: center;
+                border-radius: 6px;
+                padding: 5px;
+                position: absolute;
+                z-index: 1;
+                bottom: 150%;
+                left: 50%;
+                margin-left: -75px;
+                opacity: 0;
+                transition: opacity 0.3s;
+            }
+            .tooltip .tooltiptext::after {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                margin-left: -5px;
+                border-width: 5px;
+                border-style: solid;
+                border-color: #555 transparent transparent transparent;
+            }
+            .tooltip:hover .tooltiptext {
+                visibility: visible;
+                opacity: 1;
+            }
+        </style>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <body class="coll text-white ">
+        <nav class="navbar sticky-top navbar-dark bg-dark">
+            <a class="navbar-brand mx-auto" href="#">
+               PORTFOLIO
+            </a>
+        </nav>
+        
+        <br><br>
+        <div class="text-center">
+            <div class="">
+                <!--  p-2 bd-highlight -->
+                <div class="">
+                    <div class="p-3 rounded d-inline-flex bd-highlight bg-dark">
+                        <div class="p-2 d-inline-flex" id="myInput" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="Dismissible popover" data-bs-content="And here's some amazing content. It's very engaging. Right?">http://kucs.ddns.net/api/data/</div>
+                        <div class="btn btn-outline-primary" onclick="myFunction('myInput')">+</div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        <script>
+            function myFunction(id) {
+                /* Get the text field */
+                var copyText = document.getElementById(id).firstChild.nodeValue;
+                // console.log(copyText);
+                /* Copy the text inside the text field */
+                navigator.clipboard.writeText(copyText);
+                /* Alert the copied text */
+                alert("Copied the text: " + copyText);
+            }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<div class="container">
+    <h1 class="text-center">{{title}}</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="thumbnail"></div>
+        </div>
+        
+    </div>
+    <table class="table">
+    <thead>
+        <tr>
+        <th scope="col">#</th>
+        <th scope="col">protoval</th>
+        <th scope="col">host</th>
+        <th scope="col">originalUrl</th>
+        <th scope="col">buttons</th>
+        </tr>
+    </thead>
+        {{#each data}}
+            <tr>
+                <th>{{id}}</th>
+                <td>{{protocol}}</td>
+                <td>{{host}}</td>
+                <td>{{originalUrl}}</td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-sm">Add</button>
+                    <button type="button" class="btn btn-secondary btn-sm">Delete</button>
+                </td>
+            </tr>
+        {{/each}}
+    </table>
+</div>
