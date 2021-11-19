@@ -21,8 +21,7 @@ add.get('/add/:id', function (req, res) {
 })
   
 add.get('/', (req, res) => {
-
-    con.query("SELECT * FROM `logs` LIMIT 5", function (err, result) {
+    con.query("SELECT * FROM `logs` LIMIT 3", function (err, result) {
         if (err) throw err;
         const resultArray = Object.values(JSON.parse(JSON.stringify(result)))
         // res.send(resultArray)

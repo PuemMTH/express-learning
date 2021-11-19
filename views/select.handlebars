@@ -1,13 +1,7 @@
 <div class="container">
-    <h1 class="text-center">{{title}}</h1>
-    <div class="row">
-        <div class="col-md-4">
-            <div class="thumbnail"></div>
-        </div>
-        
-    </div>
-    <table class="table">
-    <thead>
+    <h1 class="text-center text-light">{{title}}</h1>
+    <table class="table table-dark table-striped">
+    <thead class="">
         <tr>
         <th scope="col">#</th>
         <th scope="col">protoval</th>
@@ -17,12 +11,12 @@
         </tr>
     </thead>
         {{#each data}}
-            <tr>
-                <th>{{id}}</th>
-                <td>{{protocol}}</td>
-                <td>{{host}}</td>
-                <td>{{originalUrl}}</td>
-                <td>
+            <tr class="">
+                <th class="col">{{id}}</th>
+                <td class="col">{{protocol}}</td>
+                <td class="col">{{host}}</td>
+                <td class="col-sm">{{originalUrl}}</td>
+                <td class="col">
                     <button type="button" class="btn btn-primary btn-sm">Add</button>
                     <button type="button" class="btn btn-secondary btn-sm">Delete</button>
                 </td>
