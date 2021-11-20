@@ -1,21 +1,16 @@
 # Express and MySQL
 
-<!-- * You have basic understanding of Javascript
-* You know the DiscordJS library a little bit
-* You have some understanding of SQL queries [w3schools](https://www.w3schools.com/sql/)
-* You know how a MySQL database works -->
-<!-- 
+## For studen Program 
+![image002.png](https://files.yande.re/image/a62dc4258bdbb205f3b3e72dd35227dd/yande.re%20877163%20animal_ears%20kitasan_black_%28umamusume%29%20tail%20uma_musume_pretty_derby.jpg)
+
+## Contect
+
+[Youtube](https://youtube.com/channel/UCxm5QXT3WjdadWf7cUR8S7g)
+[Facebook](https://www.facebook.com/puemmth/)
+[Instagram](https://www.instagram.com/puemmth/)
+
 ## Packages
-For using MySQL in your NodeJS application, you will need the **mysql**-package and the **discord.js**-package. You can download these packages with:
-> npm install mysql
-
-**Documentation:** https://www.npmjs.com/package/mysql
-
-> npm install discord.js
-
-**Documentation:** https://discord.js.org
-
-## MySQL Database
-Here is a look how I designed my `settings`-table in my Database:
-![database design1](https://github.com/HalloSouf/DiscordJS-MySQL/blob/master/images/db1.png?raw=true)
-![database design2](https://github.com/HalloSouf/DiscordJS-MySQL/blob/master/images/db2.png?raw=true) -->
+How to install package 
+> npm install 
+And run server
+> npm run dev
