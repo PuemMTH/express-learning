@@ -11,6 +11,6 @@
 
 ## Packages
 How to install package 
-> npm install 
+'''npm install'''
 And run server
-> npm run dev
+'''npm run dev'''
